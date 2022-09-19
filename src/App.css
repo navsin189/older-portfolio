@@ -1,38 +1,103 @@
-.App {
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.box {
+  display: inline-block;
+  box-sizing: border-box;
+  box-shadow: 3px 4px #7c3aed;
+  padding: 6px;
+  border-width: 1px;
+  border-color: #7c3aed;
+  border-style: solid;
+  border-radius: 5px;
+  margin: 3px;
   text-align: center;
+  text-transform: uppercase;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.myName {
+  width: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nameBody {
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.nameBody h1 {
+  display: inline-block;
+}
+.myName:hover {
+  border-color: white;
+  box-shadow: 3px 4px white;
+  color: tomato;
+}
+
+.selfIntro {
+  text-align: justify;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-transform: none;
+  color: #3f3f46;
+}
+.selfIntro:hover {
+  color: #dc2626;
+  /* color: white; */
+  border-color: white;
+  box-shadow: 3px 4px white;
+}
+.projectHeading {
+  margin-top: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+/* .batman{
+  color: #171717;
+  font-weight: 600;
+  font-size:larger;
+  margin-bottom: 8px;
+}
+.batman:hover{
   color: white;
-}
+} */
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 898px) {
+  .nameBody {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .nameBody h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .selfIntroBody {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }

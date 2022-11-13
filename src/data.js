@@ -5,11 +5,11 @@ export const projectData = [
     display:
       "https://ih1.redbubble.net/image.468284225.2756/abf,4x4,x750-pad,750x1000,f8f8f8.u2.jpg",
     description: [
-      "wrote terraform file that construct VPC, security group, EBS volume and launch a EC2 instance with these configurations",
-      "python and docker are installed just after launching the instance through provisioning",
-      "Containerizing Django web app and configure Apache web server for the same.",
-      "Launched AWS RDS with PostgreSQL engine and connected to EC2 instance",
-      "Connected Django App to postgreSQL",
+      "terraform modules for i) custom VPC ii) RDS DB iii) Ec2 instance iv) S3 bucket",
+      "Through provisioning python and docker are installed",
+      "Dockerfile to containerize Django webapp served on Apache web server",
+      "PostgreSQL used as database",
+      "Frontend hosted on S3 bucket",
     ],
     git: false,
     githubRepo: "",
@@ -20,14 +20,14 @@ export const projectData = [
     display:
       "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2020/08/k3s-logo-square.png",
     description: [
-      "built a website utilising the FastAPI web framework",
+      "created backend using FastAPI web framework",
       "generated a docker image, containerized the web application, and published it to dockerhub",
-      "Vagrant was set up, and virtual machines were launched and started.",
+      "Using vagrant master and worker nodes are launched",
       "a ansible playbook was written to provision these machines",
-      "Using the playbook, I installed the k3s (Kubernetes) server and agent then deployed the master and worker nodes, respectively",
+      "Using the playbook, I installed the k8s and agent then deployed the master and worker nodes, respectively",
       "developed web application and postgres database deployments and services",
     ],
-    githubRepo: "https://github.com/navsin189/vagrant-ansible-k3s",
+    githubRepo: "https://github.com/navsin189/k8s-vagrant-ansible",
     git: true,
   },
   {
@@ -119,6 +119,9 @@ export const certi = [
     git: false,
   }
 ];
+
+
+
 export const skills = [
     {
         name: "Ansible",
